@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Uploaded Image and HOG Result</h1>
+    <h2>Original Image</h2>
+    <img src="{{ url_for('static', filename=filename) }}" alt="Uploaded Image">
+    <h2>HOG Image</h2>
+    <img src="{{ url_for('static', filename=hog_img) }}" alt="HOG Image">
+    <a href="/">Upload another image</a>
+</body>
+</html>
